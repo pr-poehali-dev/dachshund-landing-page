@@ -85,7 +85,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-primary">Элит Такса</h1>
-            <div className="hidden md:flex gap-8">
+            <div className="hidden md:flex gap-8 items-center">
               {[
                 { id: 'home', label: 'Главная' },
                 { id: 'about', label: 'О нас' },
@@ -106,6 +106,13 @@ const Index = () => {
                   {item.label}
                 </button>
               ))}
+              <a
+                href="/chatgpt"
+                className="ml-4 px-4 py-2 bg-primary/20 text-primary rounded-lg border border-primary/30 hover:bg-primary/30 transition-colors text-sm font-medium flex items-center gap-2"
+              >
+                <Icon name="Bot" size={16} />
+                AI Помощник
+              </a>
             </div>
           </div>
         </div>
